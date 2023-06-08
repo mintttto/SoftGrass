@@ -81,6 +81,13 @@
         title.style.left = '554px'
         titleImg[0].style.width = '300px'
     });
+    let Img1Img = document.getElementsByClassName('Img1')
+    console.log(Img1Img[0].style)
+    Img1Img[0].addEventListener("click",() => {
+        Img1.style.top = '10px'
+        Img1.style.left = '554px'
+        Img1[0].style.width = '300px'
+    });
 
 
 
@@ -120,6 +127,7 @@ body{
     height: 200px;
     object-fit: cover;
     z-index: 100;
+    pointer-events: auto;
 }
 .img2{
     left: 200px;
@@ -159,26 +167,5 @@ body{
     pointer-events: auto;
 
 }
-.abc{ height:300px; border:1px solid #000; margin:0 auto} 
-@media screen and (min-width: 1201px) { 
-.abc {width: 1200px} 
-} 
-/* css注释：设置了浏览器宽度不小于1201px时 abc 显示1200px宽度 */ 
-
-@media screen and (max-width: 1200px) { 
-.abc {width: 900px} 
-} 
-/* 设置了浏览器宽度不大于1200px时 abc 显示900px宽度 */ 
-
-@media screen and (max-width: 901px) { 
-.abc {width: 200px;} 
-} 
-/* 设置了浏览器宽度不大于901px时 abc 显示200px宽度 */ 
-
-@media screen and (max-width: 500px) { 
-.abc {width: 100px;} 
-} 
-/* 设置了浏览器宽度不大于500px时 abc 显示100px宽度 */ 
-
 </style>
 </html>
